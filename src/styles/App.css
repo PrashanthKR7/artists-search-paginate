@@ -1,0 +1,126 @@
+#root {
+  display: grid;
+  height: 100vh;
+  align-content: center;
+}
+.current-page {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.media {
+  border: 2px solid lightgray;
+  border-radius: 11px;
+  margin: 5px;
+  background: white;
+}
+
+.media-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 64px;
+  padding-left: 10px;
+  width: calc(100% - 70px);
+}
+
+.media-body h4 {
+  font-size: 1.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.media-body a {
+  font-size: 0.8rem;
+}
+
+.artist-full-card .media-body {
+  height: 80px;
+  text-align: left;
+}
+
+img {
+  border-radius: 9px 0px 0 9px;
+}
+
+.artist-container {
+  flex-direction: column;
+  overflow-y: auto;
+  align-items: center;
+  flex-wrap: unset;
+  display: grid;
+  grid-template-columns: minmax(250px, max-content);
+  justify-content: center;
+  width: max-content;
+  justify-self: center;
+  background: #1d314ab8;
+  padding: 15px;
+}
+
+[class^='col-'] {
+  flex: initial;
+}
+
+.btn-success {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+input.form-control {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+.loader-container {
+  display: grid;
+  display: -ms-grid;
+  justify-content: center;
+  align-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  height: 100%;
+  color: white;
+}
+.container {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 92vh;
+  padding: 20px 0;
+}
+.container.album-container {
+  grid-template-rows: max-content max-content 1fr max-content;
+  padding: 0px;
+  height: 95vh;
+}
+.album-header {
+  color: white;
+}
+.navbar-link {
+  color: blue !important;
+  cursor: pointer;
+}
+
+a.navbar-link:hover {
+  color: #0056b3 !important;
+  text-decoration: underline !important;
+}
+
+a.navbar-link {
+  cursor: pointer;
+  color: #007bff !important;
+  text-decoration: none !important;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 320px) {
+  .pagination > li > a,
+  .pagination > li > span {
+    float: left;
+    padding: 2px 4px;
+  }
+  .artist-container {
+    grid-template-columns: 300px;
+  }
+}
+
+.container img {
+  background-image:url('./../assets/images/music_icon.png');
+}
