@@ -1,7 +1,7 @@
 {
-  "name": "paginating-react-demo",
+  "name": "artists-search-paginate",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "bootstrap": "^4.1.0",
     "prop-types": "^15.6.1",
@@ -12,10 +12,8 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start:js": "react-scripts start",
-    "build:js": "react-scripts build",
-    "start": "npm-run-all -p copy:flags watch:css start:js",
-    "build": "npm-run-all build:css build:js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build:css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
